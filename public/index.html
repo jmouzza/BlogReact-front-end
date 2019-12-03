@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
+    <meta name="description" content="Web site created using create-react-app" />
     <link rel="apple-touch-icon" href="logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -25,8 +23,23 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
-  </head>
-  <body>
+    <!--Script clonador de artículos de prueba solo en maquetación
+    <script type="text/javascript">
+        window.addEventListener("load", function() {
+            var template = document.getElementById("article-template");
+            var articles = document.getElementById("articles");
+            for (var i = 1; i < 5; i++) {
+                var clonado = template.cloneNode(true);
+                clonado.removeAttribute("id"); //eliminando atributo id ya que debe ser único del padre
+                var h3 = clonado.getElementsByTagName("h3")[0];
+                h3.innerHTML = h3.textContent + " " + (i + 1);
+                articles.appendChild(clonado);
+            }
+        });
+    </script>-->
+</head>
+
+<body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
@@ -39,5 +52,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+</body>
+
 </html>
