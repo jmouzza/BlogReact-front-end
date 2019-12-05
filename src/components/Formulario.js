@@ -59,7 +59,7 @@ class Formulario extends Component {
                                 <p>Contacto (email): {this.state.user.email}</p>
                             </div>
                         }
-                        <h2>Formulario</h2>
+                        <h2 id="try-pulse">Formulario</h2>
                         <form action="" className="mid-form" onSubmit={this.recibirFormulario} onChange={this.recibirFormulario}>
                             <div className="form-group">
                                 <input type="text" name="name" placeholder="Nombre" ref={this.nombreRef} />

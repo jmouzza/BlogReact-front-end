@@ -51,6 +51,29 @@ body {
     }
 }
 
+@keyframes pulse {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+#try-pulse:hover {
+    color: #2c99ce;
+    animation-duration: 500ms;
+    animation-name: pulse;
+    transition: color 250ms ease-in-out;
+    background-color: transparent;
+}
+
 #logo img {
     display: block;
     float: left;

@@ -36,12 +36,12 @@ class Pelicula extends Component {
                 <div className="center main-container">
                     <section id="content">
                         {name &&
-                            <h1>Selección de películas para: {name}</h1>
+                            <h2>Selección de películas para: {name}</h2>
                         }
                         {this.state.favorita.title ? (
                             <h2>Favorita: {this.state.favorita.title}</h2>
                         ) : (
-                                <h2>No has elegido película favorita</h2>
+                                <h2 id="try-pulse">No has elegido película favorita</h2>
                             )
                         }
                         <div id="articles">

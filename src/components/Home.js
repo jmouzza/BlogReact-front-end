@@ -31,7 +31,7 @@ class Home extends Component {
                 />
                 <div className="center main-container">
                     <section id="content">
-                        <h2>ULTIMOS ARTICULOS</h2>
+                        <h2 id="try-pulse">ULTIMOS ARTICULOS</h2>
                         {/*Listado de artículos*/}
                         <div id="articles">
                             {(this.state.status === 'success' && JSON.stringify(this.state.latest) !== '[]') ? (

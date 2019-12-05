@@ -102,7 +102,7 @@ class NewArticle extends Component {
                 />
                 <div className="center main-container">
                     <section id="content">
-                        <h2>Nuevo Artículo</h2>
+                        <h2 id="#try-pulse">Nuevo Artículo</h2>
                         <form action="" className="mid-form" onSubmit={this.recibirFormulario}>
                             <div className="form-group">
                                 <label htmlFor="title">Título</label>
